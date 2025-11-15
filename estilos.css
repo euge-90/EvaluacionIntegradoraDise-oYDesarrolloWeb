@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.modo-oscuro {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ee7c6b 0%, #f19b8e 100%);
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.modo-oscuro header {
+    background-color: #8b4a3d;
+}
+
+.header-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#btn-modo-oscuro {
+    background-color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#btn-modo-oscuro:hover {
+    background-color: #f0f0f0;
+}
+
+body.modo-oscuro #btn-modo-oscuro {
+    background-color: #333;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.nombre-estudiante {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+body.modo-oscuro .nombre-estudiante {
+    color: #e0e0e0;
+}
+
+/* Contenedor principal - Página HOME */
+.contenedor-principal {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.modo-oscuro .contenedor-principal {
+    background-color: #2d3748;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.datos-personales {
+    flex: 1;
+}
+
+.fila-dato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    font-weight: normal;
+    color: #333;
+    min-width: 80px;
+    margin-right: 10px;
+}
+
+body.modo-oscuro .etiqueta {
+    color: #e0e0e0;
+}
+
+.valor {
+    background: linear-gradient(135deg, #c8e66d 0%, #d4f07c 100%);
+    padding: 8px 15px;
+    border-radius: 5px;
+    flex: 1;
+    color: #2d3748;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.modo-oscuro .valor {
+    background-color: #8ba83f;
+    color: #1a1a1a;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #666;
+}
+
+.foto-perfil-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border: 3px solid #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.boton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #5568d3 0%, #6a4191 100%);
+}
+
+body.modo-oscuro .boton {
+    background-color: #4a3db3;
+}
+
+/* Contenedor contacto - Página CONTACTO */
+.contenedor-contacto {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.modo-oscuro .contenedor-contacto {
+    background-color: #2d3748;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+body.modo-oscuro .campo-formulario label {
+    color: #e0e0e0;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+body.modo-oscuro .campo-formulario input,
+body.modo-oscuro .campo-formulario textarea {
+    background-color: #404040;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.mensaje-error {
+    color: #d32f2f;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.botones-formulario {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.boton-enviar {
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+}
+
+.boton-borrar {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-borrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #ffc4bc 0%, #ffd7d2 100%);
+    padding: 25px;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.modo-oscuro footer {
+    background-color: #8b4a3d;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-uade {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d3748;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    margin: 0 20px;
+}
+
+body.modo-oscuro footer p {
+    color: #e0e0e0;
+}
+
+.github-link {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    color: #666;
+}
+
+body.modo-oscuro .github-link {
+    color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fila-dato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .etiqueta {
+        margin-bottom: 5px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        width: 100%;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    .botones-formulario {
+        flex-direction: column;
+    }
+
+    .boton-enviar,
+    .boton-borrar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .nombre-estudiante {
+        font-size: 22px;
+    }
+
+    .contenedor-principal,
+    .contenedor-contacto {
+        padding: 25px;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+}

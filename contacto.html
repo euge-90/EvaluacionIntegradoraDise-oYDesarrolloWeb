@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ficha Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <h1>Ficha personal</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <button id="btn-modo-oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="nombre-estudiante">Maria Eugenia Ojeda Lizondo</h2>
+        
+        <div class="contenedor-contacto">
+            <form id="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <span class="mensaje-error" id="error-nombre"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" name="edad">
+                    <span class="mensaje-error" id="error-edad"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="mensaje-error" id="error-email"></span>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4"></textarea>
+                    <span class="mensaje-error" id="error-comentario"></span>
+                </div>
+
+                <div class="botones-formulario">
+                    <button type="submit" class="boton-enviar">ENVIAR</button>
+                    <button type="button" id="btn-limpiar" class="boton-borrar">BORRAR</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <img src="imagenes/UADE.png" alt="Logo UADE" class="logo-uade">
+            <p>Todos los derechos reservados</p>
+            <a href="https://github.com/euge-90/" target="_blank" class="github-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
